@@ -6,6 +6,7 @@ body {
     background-color: #344966;
     position: relative;
     min-height: 100vh;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .content-wrap {
@@ -67,3 +68,4 @@ div > .jumbotron > p > a {
 .about-container {
     margin-top: 100px;
 }
+
