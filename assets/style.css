@@ -56,12 +56,17 @@ div > .jumbotron {
     font-family: 'Roboto Mono', monospace;
 }
 
-div > .jumbotron > p > a {
-    color: #000;
+div > .jumbotron > p > button > a {
+    color: #fff;
     text-decoration: none;
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 1em;
 }
+
+.custom-button {
+    background-color: #000;
+}
+
 
 /*--------------------------------------------------About Page Styles*/
 
@@ -69,3 +74,16 @@ div > .jumbotron > p > a {
     margin-top: 100px;
 }
 
+/*--------------------------------------------------Music Page Styles*/
+
+#favourite-artists-title-bg {
+    background-color: #DFB096;
+}
+
+#favourite-artists-bg {
+    background-color: #EDEAE5;
+}
+
+ul.favourite-artists {
+    list-style-type: none;
+}
