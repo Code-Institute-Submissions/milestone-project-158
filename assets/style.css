@@ -44,7 +44,9 @@ footer > div > div > div > a > i {
     margin-top: 5px;
 }
 
-/*--------------------------------------------------Jumbotron Styles*/
+
+
+/*-------------------------------------------------- Home page Jumbotron 1 Styles*/
 
 div > .jumbotron {
     background-color: #DFB096;
@@ -62,6 +64,17 @@ div > .jumbotron > p > button > a {
     background-color: #000;
 }
 
+/*-------------------------------------------------- Home page text box styles*/
+
+.social-reminder {
+    margin-bottom: 48px;
+    text-align: center;
+    background-color: #DFB096;
+}
+
+.social-reminder p {
+    color: #000;
+}
 
 /*--------------------------------------------------About Page Styles*/
 
@@ -133,4 +146,58 @@ div > .jumbotron > p > button > a {
     .gallery-row .col img {
     filter: grayscale(0) brightness(1);
     }
+}
+
+.gallery-heading {
+    background-color: #EDEAE5;
+}
+
+.gallery-heading p {
+    color: #344966
+}
+
+/*--------------------------------------------------Contact Page Styles*/
+
+#form-background {
+    background-color: #344966;
+}
+
+#form {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+form #name,#email {
+    border: none;
+    border-bottom: 2px solid #000;
+    background-color: #4C513F;
+    color: #fff;
+    text-align: left;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 0.5;
+    font-size: 0.8rem;
+}
+
+.textarea-container * {
+    vertical-align: top;
+}
+
+.contact-heading {
+    color: #fff;
+}
+
+#form .jumbotron {
+    background-color: #000D14;
+    padding: 10px;
+}
+
+.form-body {
+    background-color: #EDEAE5;
+    width: 50%;
+    padding-top: 24px;
 }
