@@ -4,7 +4,6 @@
 /*--------------------------------------------------General Styles*/
 body {
     background-color: #344966;
-    position: relative;
     font-family: 'Roboto Mono', monospace;
     padding-bottom: 70px;
 }
@@ -172,13 +171,13 @@ div > .jumbotron > p > button > a {
 form #name,#email {
     border: none;
     border-bottom: 2px solid #000;
-    background-color: #4C513F;
     color: #fff;
     text-align: left;
+    background-color: #DFB096
 }
 
 ::placeholder {
-    color: #fff;
+    color: #000;
     opacity: 0.5;
     font-size: 0.8rem;
 }
@@ -191,13 +190,16 @@ form #name,#email {
     color: #fff;
 }
 
-#form .jumbotron {
-    background-color: #000D14;
-    padding: 10px;
+.form-body {
+    width: 70%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: #DFB096;
 }
 
-.form-body {
-    background-color: #EDEAE5;
-    width: 50%;
-    padding-top: 24px;
+@media screen and (max-width: 768px) {
+    .form-body {
+        width: 90%;
+
+    }
 }

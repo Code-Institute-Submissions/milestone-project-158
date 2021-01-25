@@ -32,14 +32,14 @@
             <div class="container mt-0">
                 <div class="row">
                     <div class="col">
-                        <div class="jumbotron contact-heading">
+                        <div class="contact-heading mt-2">
                             <h3>Want to get in contact with me?</h3>
                             <h5>Leave your details below and I'll get back to you as soon as possible!</h5>
                         </div>
                     </div>
                 </div>
             </div>
-                <div class="container form-body">
+                <div class="container form-body mt-2">
                     <div class="row">
                         <div class="col">
                             <form action="send-my-data-here.net" method="POST">
@@ -50,20 +50,20 @@
                                 <input type="email" name="email" id="email" placeholder="Your email address" required>
                                 <br>
                                 <br>
-                                <label for="reason-for-contact">Reason for contact:</label>
-                                <input id="booking" type="radio" name="reason-for-contact" value="booking" checked>
-                                <label for="booking">Booking</label>
-                                <input id="Business" type="radio" name="reason-for-contact" value="business">
-                                <label for="business">Business</label>
-                                <input id="collaboration" type="radio" name="reason-for-contact" value="collaboration">
-                                <label for="collaboration">Collaboration</label>
-                                <input id="other" type="radio" name="reason-for-contact" value="other">
-                                <label for="other">Other</label>
+                                <label for="contact-reason">Reason for contact:</label>
+                                <select name="reason" id="reason">
+                                    <option value="business">Business</option>
+                                    <option value="booking">Booking</option>
+                                    <option value="collaboration">Collaboration</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <br>
                                 <br>
                                 <p class="textarea-container">
                                     <label for="inquirey">Your query:</label>
-                                    <textarea name="inquirey" id="inquirey" cols="30" rows="10" placeholder="Your query here"></textarea>
+                                    <textarea name="inquirey" id="inquirey" cols="20" rows="15" placeholder="Your query here"></textarea>
                                 </p>
+                                <input type="submit">
                             </form>
                         </div>
                     </div>
