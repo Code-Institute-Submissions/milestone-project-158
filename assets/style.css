@@ -192,7 +192,7 @@ section .contact-link a {
 form #name,#email {
     border: none;
     border-bottom: 2px solid #000;
-    color: #fff;
+    color: #000;
     text-align: left;
     background-color: #DFB096
 }
