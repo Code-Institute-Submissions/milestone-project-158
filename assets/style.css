@@ -179,7 +179,7 @@ section .contact-link a {
 /*--------------------------------------------------Contact Page Styles*/
 
 #form-background {
-    background-image: url(images/blurry-surfer.jpg);
+    background-image: url(images/finished-blur.jpg);
     background-color: #344966;
     background-attachment: fixed;
     background-position: center;
@@ -232,7 +232,7 @@ input[text] {
     padding-top: 24px;
     padding-bottom: 24px;
     background-color: #DFB096;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 input[type=submit] {
