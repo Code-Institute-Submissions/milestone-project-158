@@ -77,7 +77,7 @@ div > .jumbotron > p > button > a:hover {
 /*-------------------------------------------------- Home page text box styles*/
 
 .social-reminder {
-    margin-bottom: 48px;
+    margin-bottom: 40px;
     text-align: center;
     background-color: #DFB096;
 }
@@ -179,8 +179,15 @@ section .contact-link a {
 /*--------------------------------------------------Contact Page Styles*/
 
 #form-background {
+    background-image: url(images/blurry-surfer.jpg);
     background-color: #344966;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
+
 
 #form {
     width: 100%;
@@ -195,6 +202,15 @@ form #name,#email {
     color: #000;
     text-align: left;
     background-color: #DFB096
+}
+
+textarea,
+input[text] {
+    border: none;
+    border-bottom: 2px solid #000;
+    color: #000;
+    text-align: left;
+    background-color: #DFB096;
 }
 
 ::placeholder {
@@ -212,10 +228,11 @@ form #name,#email {
 }
 
 .form-body {
-    width: 70%;
+    width: 35%;
     padding-top: 24px;
     padding-bottom: 24px;
     background-color: #DFB096;
+    font-size: 1.5rem;
 }
 
 input[type=submit] {
