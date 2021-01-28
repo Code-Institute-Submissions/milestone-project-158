@@ -30,11 +30,6 @@ body {
 
 footer {
     background-color: #4C513F;
-    position: absolute;
-    bottom: 0;
-    height: 2.5rem;
-    width: 100%;
-
 }
 
 footer > div > div > div > a > i {
@@ -77,7 +72,7 @@ div > .jumbotron > p > button > a:hover {
 /*-------------------------------------------------- Home page text box styles*/
 
 .social-reminder {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
     text-align: center;
     background-color: #DFB096;
 }
@@ -122,6 +117,9 @@ section .contact-link a {
 
 
 /*--------------------------------------------------Gallery Styles*/
+#gallery-background {
+    background-color: #344966;
+}
 
 .gallery-row {
     display: flex;
@@ -169,11 +167,11 @@ section .contact-link a {
 }
 
 .gallery-heading {
-    background-color: #DFB096;
+    
 }
 
 .gallery-heading p {
-    color: #000
+    color: #fff;
 }
 
 /*--------------------------------------------------Contact Page Styles*/
@@ -188,6 +186,9 @@ section .contact-link a {
     overflow: hidden;
 }
 
+form {
+    color: white;
+}
 
 #form {
     width: 100%;
@@ -196,25 +197,27 @@ section .contact-link a {
     text-align: center;
 }
 
+
 form #name,#email {
     border: none;
-    border-bottom: 2px solid #000;
-    color: #000;
+    border-bottom: 2px solid #fff;
+    color: #fff;
     text-align: left;
-    background-color: #DFB096
+    background-color: rgba(0,0,0,0)
+    /*background-color: #DFB096*/
 }
 
 textarea,
 input[text] {
-    border: none;
-    border-bottom: 2px solid #000;
-    color: #000;
+    border: 2px solid #fff;;
+    border-bottom: 2px solid #fff;
+    color: #fff;
     text-align: left;
-    background-color: #DFB096;
+    background-color: rgba(0,0,0,0)
 }
 
 ::placeholder {
-    color: #000;
+    color: #fff;
     opacity: 0.5;
     font-size: 0.8rem;
 }
@@ -231,22 +234,22 @@ input[text] {
     width: 35%;
     padding-top: 24px;
     padding-bottom: 24px;
-    background-color: #DFB096;
-    font-size: 1rem;
+    /*background-color: #DFB096;*/
+    font-size: 1.2rem;
 }
 
 input[type=submit] {
-    border: 2px solid #000;
-    color: #fff;
-    background-color: #000;
+    border: 2px solid #fff;
+    color: #000;
+    background-color: #fff;
     padding: 2px 4px;
     font-size: larger;
 }
 
 input[type=submit]:hover {
-    border: 2px solid #000;
-    color: #000;
-    background-color: #fff;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #000;
     padding: 2px 4px;
 }
 
