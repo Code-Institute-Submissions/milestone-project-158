@@ -22,7 +22,7 @@ The site is going to be a simple, clean design. There will be an aesthetic backg
 
 ### The Skeleton Plane
 
-As stated in the structure plane, the design will be quite minimalist with the use of a simple landing page with only one real call to action towards the top of the page. The user will navigate within the site using a Bootstrap navigation bar. A footer at the bottom of the page will direct the user to Billy's social media pages. The gallery page will contain images of Billy, Limerick and Lahinch in a single, double or triple column layout depending on the viewport width. The music page will contain iframes linking to Billy's original music on youtube and will be a single column layout on mobile. Finally, the contact page will contain a blurred out background image and have a form in the middle of the page. See the wireframes directory to see the mobile and desktop design ideas. 
+As stated in the structure plane, the design will be quite minimalist with the use of a simple landing page with only one real call to action towards the top of the page. The user will navigate within the site using a Bootstrap navigation bar. A footer at the bottom of the page will direct the user to Billy's social media pages. The gallery page will contain images of Billy, Limerick and Lahinch in a single, double or triple column layout depending on the viewport width. The music page will contain iframes linking to Billy's original music on youtube and will be a single column layout on mobile. Finally, the contact page will contain a blurred out background image and have a form in the middle of the page. See the wireframes directory to see the very preliminary mobile and desktop design ideas. 
 
 ### The Surface Plane
 
@@ -150,3 +150,8 @@ All photos of Billy were provided to me by Billy himself and were taken by his f
 * Gallery - the gallery was based heavily off of a video made by Fullyworld Web Tutorials on youtube and can be found [here](https://www.youtube.com/watch?v=180p7GLmMyQ)
 * Iframes - the iframes were made responsive using the bootstrap responsive video feature and can be found [here](https://getbootstrap.com/docs/4.6/utilities/embed/#about)
 * Contact form - I had to re-learn how to create a contact form and I used a combination of the code institute lessons and this lesson provided by [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form)
+
+## Acknowledgements 
+
+First and foremost I want to thank Billy for allowing me to use his data to make this project. I also want to thank Jamie Moore, the photos he provided really made the project so much better. I also want to thank Gurjot, my mentor. Finally, I want to thank the LCETB for enrolling me in this course and the Code Institute for creating such an excellent course. I've been thoroughly enjoying it thus far and am looking forward to completing future projects!]
+

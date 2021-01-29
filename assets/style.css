@@ -236,6 +236,7 @@ input[text] {
     padding-bottom: 24px;
     /*background-color: #DFB096;*/
     font-size: 1.2rem;
+    background-color: rgba(0,0,0,.7)
 }
 
 input[type=submit] {
