@@ -31,8 +31,8 @@
         </header>
         
         <!-- Form Heading -->
-        <section id="form">
-            <div class="container-fluid">
+        <section id="form-heading">
+            <div class="container mt-3">
                 <div class="row">
                     <div class="col">
                         <div class="contact-heading">
@@ -44,7 +44,7 @@
             </div>
 
             <!-- Form body -->
-                <div class="container form-body">
+                <div class="container form-wrapper mt-2">
                     <div class="row">
                         <div class="col">
                             <form action="/my-form-handling-page" method="post">
@@ -66,10 +66,12 @@
                                 <br>
                                 <p class="textarea-container">
                                     <label for="inquirey">Your query</label>
-                                    <textarea name="inquirey" id="inquirey" cols="18" rows="5" placeholder="Your query here"></textarea>
+                                    <textarea name="inquirey" id="inquirey" cols="18" rows="10" placeholder="Your query here"></textarea>
                                 </p>
                                 <br>
-                                <input type="submit">
+                                <div class="align-submit">
+                                    <input type="submit">
+                                </div>
                             </form>
                         </div>
                     </div>

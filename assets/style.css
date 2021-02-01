@@ -43,8 +43,18 @@ footer > div > div > div > a > i {
 /*-------------------------------------------------- Home page Jumbotron 1 Styles*/
 
 div > .jumbotron {
-    background-color: #DFB096;
-    font-family: 'Roboto Mono', monospace;
+    background-color: #344966;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #fff;
+}
+div > .jumbotron > p > a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+div > .jumbotron > p > a:hover {
+    text-decoration: none;
 }
 
 div > .jumbotron > p > button > a {
@@ -55,7 +65,7 @@ div > .jumbotron > p > button > a {
 }
 
 .custom-button {
-    background-color: #000;
+    background-color: #4C513F;
 }
 
 div > .jumbotron > p > button > a:hover {
@@ -84,8 +94,13 @@ div > .jumbotron > p > button > a:hover {
 
 /*--------------------------------------------------Music Page Styles*/
 
+#music-page {
+    font-family: 'Montserrat', sans-serif;
+}
+
 #favourite-artists-title-bg {
-    background-color: #DFB096;
+    background-color: #4C513F;
+    color: #fff;
 }
 
 #favourite-artists-bg {
@@ -112,6 +127,10 @@ section .contact-link {
 section .contact-link a {
     color: #fff;
     text-decoration: underline;
+}
+
+section .contact-link a:hover {
+    text-decoration: none;
 }
 
 
@@ -167,11 +186,18 @@ section .contact-link a {
 }
 
 .gallery-heading {
-    background-color: #DFB096;
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .gallery-heading {
+        width: 90%;
+    }
 }
 
 .gallery-heading p {
-    color: #000;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*--------------------------------------------------Contact Page Styles*/
@@ -186,15 +212,36 @@ section .contact-link a {
     overflow: hidden;
 }
 
+#form-heading {
+    font-family: 'Montserrat', sans-serif; 
+}
+
+/*css to get the form to align in the center of the screen but align to left of parent div was taken from https://stackoverflow.com/questions/8097744/how-do-i-center-this-form-in-css/8097900. answer by user orfdorf*/
+
 form {
     color: white;
+    display: inline-block; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif; 
 }
 
-#form {
+.form-wrapper {
+    display: block;
     text-align: center;
-    width: 100%;
+    width: 25%;
+    font-size: 1.2rem;
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
+@media screen and (max-width: 768px) {
+    .form-wrapper {
+        width: 90%;
+    }
+}
 
 form #name,#email {
     border: none;
@@ -224,18 +271,10 @@ input[text] {
 }
 
 .contact-heading {
-    color: #000;
-    background-color: #DFB096;
+    color: #fff;
+    text-align: center;
 }
 
-.form-body {
-    width: 35%;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    /*background-color: #DFB096;*/
-    font-size: 1.2rem;
-    background-color: rgba(0,0,0,.3)
-}
 
 input[type=submit] {
     border: 2px solid #fff;
@@ -243,6 +282,10 @@ input[type=submit] {
     background-color: #fff;
     padding: 2px 4px;
     font-size: larger;
+}
+
+.align-submit {
+    text-align: center;
 }
 
 input[type=submit]:hover {
@@ -254,8 +297,7 @@ input[type=submit]:hover {
 
 
 @media screen and (max-width: 768px) {
-    .form-body {
+    .form-wrapper {
         width: 90%;
-
     }
 }
