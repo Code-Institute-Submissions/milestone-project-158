@@ -58,7 +58,8 @@ The home page will include a background hero image of Billy sitting on logs in t
 There will be a large banner across the home page which I will use to thank users for coming to the site and to direct them to Billy's latest music. This will be the main call to action on the site and will make it clear for the user what the site is directing them to do. 
 
 #### Bottom Banner
-There will be a banner across the bottom of the home page to explain what the footer does. This removes any ambiguity for the user, which will improve the user experience.  
+There will be a banner across the bottom of the home page to explain what the footer does. This removes any ambiguity for the user, which will improve the user experience.
+*change* After consulting with my mentor, this section was removed as we agreed that there actually was no ambiguity as to what the footer meant.
 
 ### Gallery
 The images for the gallery were a combination of images taken by Billy himself and images taken from Shutterstock, with permission of course. This section allows the user to see Billy in different places and to learn more about him. The images will be automatically grey and will become colorful when hovered. This gallery was based off of a tutorial taught by Fullyworld Web Tutorials and can be found at this link (https://www.youtube.com/watch?app=desktop&v=180p7GLmMyQ).
@@ -66,12 +67,12 @@ The images for the gallery were a combination of images taken by Billy himself a
 ### Music
 
 #### iframes
-I added three responsive iframes using the boostrap responsive iframe class. This allows the user to listen to Billy's original music in one convenient location. I used the bootstrap responsive layout system to have the iframes resize to a single column when viewed on mobile. This feature greatly adds to the UX of this page. 
+I will add three responsive iframes using the boostrap responsive iframe class. This will allow the user to listen to Billy's original music in one convenient location. I will use the bootstrap responsive layout system to have the iframes resize to a single column when viewed on mobile. This feature greatly adds to the UX of this page. 
 
 ### Contact
 
 #### Form
-This page includes a form which is a necessary feature as it allows users to get in touch with Billy regarding any number of reasons. 
+This page will include a form which is a necessary feature as it allows users to get in touch with Billy regarding any number of reasons. 
 
 
 ## Features left to implement
@@ -103,14 +104,23 @@ Fontawesome version 5.15.1 was used to add icons to various aspects of the websi
 ### [Google Fonts](https://fonts.google.com/)
 Google fonts allowed me to choose the perfect font which I felt represented Billy's image the best
 
+## Deployment
+To deploy this project I followed the instructions given in the video on the GitHub Pages main website [https://pages.github.com/]. 
+
+I firstly went to my Github repository and went to the settings tab. I then used the automatic page generator. I then imported the readme file to be displayed at this point. Then I deployed the project.
+
+
+
 ## Testing
 
 
 ### General
 * Check that each of the links in the navigation bar bring the user to the correct section of the site
 * Check each of the icons in the footer that the bring the user to Billy's social media pages and that they all open in a new tab
-* Check that when the page is resized for mobile that all of the content is still viewable.
+* Check that when the page is resized for mobile that all of the content is still viewable. 
 * Check all the text to make sure that is visible and there is enough contrast with the background
+* HTML5 was put through the W3C Markup Validation Service. On the index.html page, it returned one error. This error was that there was an 'a' link as a child of a button. To fix this I removed the button tag and styled the a link as if it were a button. This solution was found on stackoverflow at this link [https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link]. The contact page returned an error for the form on line 58 of the code, because the ID for the label didn't match the ID for the input of the form. Fixing this just involved me changing the ID of the input to match that of the label. The gallery page did not return any errors, however it did return two warnings as there were section tags which did not contain any headers within them. I fixed this by changing the initial text to a h6 instead of a paragraph and reomved the section tag from the main gallery portion of the page. I received the same warnings when validating the music page. I overcame this issue by changing the paragraph tags to h6 tags. 
+* CSS3 was put through the CSS validation service. No error was found within the CSS.
 
 ### Home page
 * Ensure that the main button on the jumbotron brings the user to Billy's youtube channel and that it opens in a new tab
@@ -136,6 +146,19 @@ Google fonts allowed me to choose the perfect font which I felt represented Bill
 * When creating the contact page, I had a design idea to use a background image, but I decided that I wanted to blur out the background image. Using the backdrop-filter (blur) function actually caused the footer to be brought up from the bottom of the page. When I did the tried to blur the image on the landing page the same thing happened.
 * *no fix* -  Unfortunately, I could not find a CSS or HTML based solution for this bug. What I did to overcome this obstacle was downloaded the free photo editing software [Gimp](https://www.gimp.org/). This allowed me to blur the image the way I wanted to and then I added this as a background image using CSS.
 
+* When creating the contact form, I found that when viewed on certain mobile devices, the bottom half of the form would not be visible. 
+* *fix* - To fix this issue I just added some simple CSS, where I hid the overflow on the x-axis and set the overflow to 'auto' on the y-axis. 
+
+* When trying to align the form in the center of the page I was finding it difficult to get the text to align to the left side of the parent div.
+* *fix* - I found a very helpful answer on stack overflow here [https://stackoverflow.com/questions/8097744/how-do-i-center-this-form-in-css/8097900]. The answer explained very clearly how to ensure that the parent div would be centered in the middle of the screen but getting the children to be aligned to the left.
+
+* When I fixed the issue of the alignment of the form, I found that the submit button wasn't aligned in the center like I wanted it, but instead it was aligned to the left.
+* *fix* To fix this issue I wrapped the submit button in a div of its own and then aligned this div to the center
+
+
+
+
+
 ## Credits
 
 ### Media
@@ -146,12 +169,14 @@ All photos of Billy were provided to me by Billy himself and were taken by his f
 
 * Layout - I used the in-built layout classes provided by Bootstrap for a lot of the layout on the site. This can be read about [here](https://getbootstrap.com/docs/4.6/layout/overview/)
 * Navigation bar - Bootstrap was also used to help created the navigation bar and can be found [here](https://getbootstrap.com/docs/4.6/components/navbar/)
-* Jumbotron - the Bootstrap Jumbotron class was used to help create the eye-catching section on the home page and can be found [here](https://getbootstrap.com/docs/4.6/components/jumbotron/)
+* Jumbotron - the Bootstrap Jumbotron class was used to help create the eye-catching main section on the home page and can be found [here](https://getbootstrap.com/docs/4.6/components/jumbotron/)
 * Gallery - the gallery was based heavily off of a video made by Fullyworld Web Tutorials on youtube and can be found [here](https://www.youtube.com/watch?v=180p7GLmMyQ)
 * Iframes - the iframes were made responsive using the bootstrap responsive video feature and can be found [here](https://getbootstrap.com/docs/4.6/utilities/embed/#about)
 * Contact form - I had to re-learn how to create a contact form and I used a combination of the code institute lessons and this lesson provided by [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form)
 
+
 ## Acknowledgements 
 
-First and foremost I want to thank Billy for allowing me to use his data to make this project. I also want to thank Jamie Moore, the photos he provided really made the project so much better. I also want to thank Gurjot, my mentor. Finally, I want to thank the LCETB for enrolling me in this course and the Code Institute for creating such an excellent course. I've been thoroughly enjoying it thus far and am looking forward to completing future projects!]
+First and foremost I want to thank Billy for allowing me to use his data to make this project. I also want to thank Jamie Moore, the photos he provided really made the project so much better. I also want to thank the LCETB for enrolling me in this course and the Code Institute for creating such an excellent course. I've been thoroughly enjoying it thus far and am looking forward to completing future projects! Finally, I would like to thank Gurjot my mentor, for giving me excellent feedback and making himself available to me. His feedback really made this project much better!
+
 

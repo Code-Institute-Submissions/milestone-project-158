@@ -57,7 +57,7 @@ div > .jumbotron > p > a:hover {
     text-decoration: none;
 }
 
-div > .jumbotron > p > button > a {
+div > .jumbotron > p > a {
     color: #fff;
     text-decoration: none;
     font-weight: 400;
@@ -68,27 +68,20 @@ div > .jumbotron > p > button > a {
     background-color: #4C513F;
 }
 
-div > .jumbotron > p > button > a:hover {
+div > .jumbotron > p > a:hover {
     color: #000;
     text-decoration: underline;
     font-weight: 400;
     font-size: 1em;
 }
 
+.custom-button {
+    border: 2px solid #4C513F;
+}
+
 .custom-button:hover {
     background-color: #fff;
-}
-
-/*-------------------------------------------------- Home page text box styles*/
-
-.social-reminder {
-    margin-bottom: 38px;
-    text-align: center;
-    background-color: #DFB096;
-}
-
-.social-reminder p {
-    color: #000;
+    border: 2px solid #000;
 }
 
 
@@ -120,7 +113,7 @@ div > .jumbotron > p > button > a:hover {
 }
 
 section .contact-link {
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: #fff;
 }
 
@@ -195,7 +188,7 @@ section .contact-link a:hover {
     }
 }
 
-.gallery-heading p {
+.gallery-heading h6 {
     color: #fff;
     font-family: 'Montserrat', sans-serif;
 }
