@@ -48,13 +48,14 @@ div > .jumbotron {
     font-weight: 300;
     color: #fff;
 }
-div > .jumbotron > p > a {
+div > .jumbotron > p > .here-link {
     color: #fff;
     text-decoration: underline;
 }
 
-div > .jumbotron > p > a:hover {
+div > .jumbotron > p > .here-link:hover {
     text-decoration: none;
+    color: #fff;
 }
 
 div > .jumbotron > p > a {
